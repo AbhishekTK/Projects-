@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.0.min.js"></script>
+
+<title>SNAPIT</title>
+
+<style>
+
+#logo{float:center;}  
+
+h1{text-align: center;}
+
+.MainHeading1{
+      margin-left: 370px;
+      margin-top: -100px;
+          font-family:"Times New Roman", Times, serif;
+            color:#000000;
+            font-size:40px;
+            line-height: 0.8;
+          }
+.blue{
+  color: #1565c0
+  }
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+    float: right;
+    width: 100%;    
+  }
+
+li {
+    float: left;
+     border-right:1px solid #bbb;
+  }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+  }
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #456789;
+  }
+
+li.dropdown {
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+
+.dropdown-content a:hover {
+  background-color: #111;
+  color: blue
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+footer { text-align: center;
+  font-size: 10px;
+  background-color: #d3d3d3;
+    display: block;
+}
+
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+    $("#b1").click(function(){
+        $("#div1").fadeToggle(50);
+        
+    });
+    $("#b2").click(function(){
+        $("#div2").fadeToggle(50);
+        
+    });
+    $("#b3").click(function(){
+        $("#div3").fadeToggle(50);
+        
+    });
+    $("#b4").click(function(){
+        $("#div4").fadeToggle(50);
+        
+    });
+    $("#b5").click(function(){
+        $("#div5").fadeToggle(50);
+        
+    });
+});
+</script>
+</head>
+
+<body>
+
+<a href="First.html">
+<img id ="logo" src="logo_snapit.png" width="350" height="200">
+</a>
+<div class="MainHeading1">Photo Studio | Gift Shop<br><br></div>
+
+   
+
+
+<ul>
+    
+ <li class="dropdown">
+     <!--<a href="javascript:void(0)" class="dropbtn">Patients</a><li>-->
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Photography</a>
+    <div class="dropdown-content">
+    <a href="Wildlife.html">Wildlife</a>
+    <a href="Sports.html">Sports</a>
+    <a href="Events.html">Events/Functions</a>
+    
+ 
+      
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Printing</a>
+    <div class="dropdown-content">
+    <a href="Albums.html">Albums</a>
+    <a href="Tees.html">T-Shirts</a>
+    
+    
+   
+    <li><a href="WeCare.html">We Care </a></li>
+    
+    <li><a href="FAQ.html">FAQ </a></li>
+    <li><a href="ContactUs.html">Contact Us</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+   
+  
+  
+    </div>
+  </li>
+        </li>
+</ul>
+   
+
+
+
+
+
+
+<div id="FAQ">
+<br><br>
+<h1> <strong>FREQUENTLY ASKED QUESTIONS</strong></h1>
+<p>&nbsp;</p>
+<p>Question 1. Is the printing on items long lasting? </p>
+<button id="b1">Show/Hide</button><div id="div1"><b>Answer 1-> Yes, the printing is coated with a plastic layer which prevents any wear and tear. Hence, our products do last long.</b></div>
+&nbsp;</p>
+<p>Question 2. Do we provide gift wraps?</p>
+<button id="b2">Show/Hide</button><div id="div2"><b>Answer 2-> Yes.</b></div>
+&nbsp;</p>
+<p>Question 3. Can items be delivered any earlier than scheduled date?</p>
+<button id="b3">Show/Hide</button><div id="div3"><b>Answer 3-> We try our best to provide services on time. We do make exceptions and deliver before time for special cases.</b></div>
+&nbsp;</p>
+<p>Question 4. Do we actually donate 5% of our earnings to provide clothes to needy?</p>
+<button id="b4">Show/Hide</button><div id="div4"><b>Answer 4-> Yes. </b></div>
+&nbsp;</p>
+<p>Question 5. Do we sell products outside India?</p>
+<button id="b5">Show/Hide</button><div id="div5"><b>Answer 5-> No. But we are soon planning to do so. Hopefully, we can start a branch somewhere outside India before the end of this year. Fingers crossed.</b></div>
+&nbsp;</p>
+
+
+
+</div>
+ 
+ <footer>
+  <p><u>Posted by:</u> <br>Sunny & Abhishek</p>
+  <p><u>Call Us On:</u> <br>+91-9869311815</p>
+  <p><u>Mail Us: </u><br><a href="mailto:snapit@gmail.com">
+  snapit@gmail.com</a></p>
+</footer>
+
+ 
+</body>
+</html>
+
