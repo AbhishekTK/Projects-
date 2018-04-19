@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Local Storage</title>
+</head>
+
+<body>
+
+<div id="result"></div>
+
+<script type="text/javascript">
+
+if(typeof(Storage)!="undefined"){
+	localStorage.setItem("firstname","My name is Abhishek Thakur.");
+	localStorage.setItem("lastname","THAKUR");
+	document.getElementById("result").innerHTML=localStorage.getItem("firstname")+" <br>"+localStorage.getItem("lastname");
+
+
+//document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+	}
+else
+	{
+	document.getElementById("result").innerHTML="Not Supported";
+	}
+
+</script>
+
+</body>
+
+</html>

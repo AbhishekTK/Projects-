@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+   
+    animation-name: example;
+    animation-duration: 4s;
+}
+h1 {
+    
+    font-size:40px;
+    position: relative;
+   
+    animation-name: example2;
+    animation-duration: 4s;
+}
+p {
+    color:black;
+    font-size:30px;
+    position: relative;
+   
+    animation-name: example3;
+    animation-duration: 6s;
+}
+
+body{
+	background-color: black;	
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:200px;}
+    30%  {background-color:yellow; left:100px; top:100px;}
+    40%  {background-color:blue; left:200px; top:200px;}
+    70%  {background-color:green; left:300px; top:100px;}
+    80% {background-color:red; left:400px; top:200px;}
+    100% {background-color:purple; left:500px; top:100px;}
+}
+@keyframes example3 {
+    0%   {background-color:white; left:0px; top:0px;}
+  100%  {background-color:white ; left:500px; top:0px;}
+}
+@keyframes example2 {
+    0%   { color:white; left:0px; top:500px;}
+    33%  { color:white; left:100px; top:400px;}
+    66%  { color:white; left:200px; top:500px;}
+    100%  { color:white; left:0px; top:400px;}
+
+}
+
+</style>
+</head>
+<body>
+<p>CSS ANIMATION</p>
+<div></div>
+
+<h1>A</h1>
+</body>
+</html>

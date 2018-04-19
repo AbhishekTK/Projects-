@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3 Query Selectors</title>
+		<style>
+		body{
+		background-color:#42f4b0;
+		color:black;
+		}
+		p b:first-child {
+		background-color:purple;
+		}
+		#a li:first-child {
+		background-color:green;
+		}
+		
+		#b li:nth-last-child(3n){
+		background-color:#4286f4;
+		}
+		
+		#c  li:last-child {
+		background-color:red;
+		}
+		#d tr:nth-of-type(3){
+		background-color:#a041f4;}
+	
+		#e tr:nth-child(2n){
+		background-color:red;}
+		
+		#f tr:last-of-type{
+		background-color:#5e2552;
+		
+		}
+	
+		#g tr:nth-of-last-of-type(5n){
+		font-size:30px;}
+	
+	
+		</style>
+		</head>
+		<body background="headerbackimg.jpeg">
+		
+		FIRST_CHILD:
+		
+		
+		<p align='center'><b>BASKETBALL!</b></p>
+		<p align='center'>MORNING!</p>
+		<ul id='a'>
+		<li>Sneakers</li>
+		<li>Basketballs</li>
+		<li>Jerseys</li>
+		</ul>
+		
+		Nth-LAST_CHILD:
+		
+		<ol id="b" >
+		<li>Juice</li>
+		<li>Gatorade</li>
+		<li>Chocolate Shake</li>
+		<li>Lemon Juice</li>
+		<li>Redbull</li>
+		<li>Water</li>
+		<li>Glucose</li>
+		</ol>
+		
+		 <br>
+		 
+		LAST_CHILD:
+		
+		<ol id="c">
+		<li>Juice</li>
+		<li>Gatorade</li>
+		<li>Chocolate Shake</li>
+		<li>Lemon Juice</li>
+		<li>Redbull</li>
+		<li>Water</li>
+		<li>Glucose</li>
+		</ol>
+		<br>
+		
+		 Nth-of-type:
+		<table id="d"  border=1px>
+		<tr>
+		<th>MARKS</th>
+		<th>STUDENT</th>
+		</tr>
+		<tr>
+		<td>90</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>80</td>
+		<td>B</td>
+		</tr>
+		<td>70</td>
+		<td>C</td>
+		</tr>
+		<tr>
+		<td>60</td>
+		<td>D</td>
+		</tr></table>
+		
+		<br><br>
+		
+		<br><br>
+		
+		Nth-child:
+		<table id="e" border=1px>
+		<tr>
+		<th>MARKS</th>
+		<th>STUDENT</th>
+		</tr>
+		<tr>
+		<td>90</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>80</td>
+		<td>B</td>
+		</tr>
+		<td>70</td>
+		<td>C</td>
+		</tr>
+		<tr>
+		<td>60</td>
+		<td>D</td>
+		</tr></table>
+		
+		<br><br>
+		
+		last-of-type:
+		
+		<table id="f" border=1px>
+		<tr>
+		<th>MARKS</th>
+		<th>STUDENT</th>
+		</tr>
+		<tr>
+		<td>90</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>80</td>
+		<td>B</td>
+		</tr>
+		<td>70</td>
+		<td>C</td>
+		</tr>
+		<tr>
+		<td>60</td>
+		<td>D</td>
+		</tr></table>
+		<br><br>
+		
+		nth of last-of-type:
+		
+		<table id="g" border=1px>
+		<tr>
+		<th>MARKS</th>
+		<th>STUDENT</th>
+		</tr>
+		<tr>
+		<td>90</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>80</td>
+		<td>B</td>
+		</tr>
+		<td>70</td>
+		<td>C</td>
+		</tr>
+		<tr>
+		<td><h5>60</h5></td>
+		<td><h5>D</h5></td>
+		</tr>
+		<tr>
+		<td>90</td>
+		<td>A</td>
+		</tr>
+		<tr>
+		<td>80</td>
+		<td>B</td>
+		</tr>
+		<td>70</td>
+		<td>C</td>
+		</tr>
+		<tr>
+		<td>60</td>
+		<td>D</td>
+		</tr>
+		</table>
+		
+		
+		
+		</body>
+		</html>
+

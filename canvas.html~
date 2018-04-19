@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas1" width="410" height="650" style="border:2px dotted #880880;">
+	SHAPES
+</canvas>
+
+<script> 
+	var c = document.getElementById("myCanvas1");
+	var ctx = c.getContext("2d");
+  	
+  	ctx.font = "20px Arial";
+	ctx.fillText("SHAPES",160,30);
+  	
+  	//Line
+  	ctx.moveTo(50,550);
+   	ctx.lineTo(360,550);
+    ctx.stroke();
+    
+    //Rectangle
+    ctx.fillStyle = "#600660"; 
+    ctx.fillRect(100,400,210,100); 
+    
+    //Circle
+    ctx.beginPath();
+    //ctx.fillStyle = "#FFFFFF";
+	ctx.arc(205,290,75,0,2*Math.PI);
+	ctx.stroke(); 
+	ctx.closePath();
+
+	//Triangle
+	ctx.moveTo(205,70);
+   	ctx.lineTo(270,180);
+    ctx.stroke();
+    ctx.moveTo(205,70);
+   	ctx.lineTo(140,180);
+    ctx.stroke();
+    ctx.moveTo(270,180);
+   	ctx.lineTo(140,180);
+    ctx.stroke();
+	
+</script>
+
+
+
+<canvas id="myCanvas2" width="410" height="650" style="border:2px solid #088088;">
+	IMAGES
+</canvas>
+<img id="flowers" src="aa.jpg" alt="Fool" width="00" height="00">
+<script>
+
+	
+	var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+    
+    ctx.font = "20px Arial";
+	ctx.fillText("IMAGES",170,30);
+    
+    var img = document.getElementById("flowers");
+    ctx.drawImage(img,40,100);
+
+</script>
+
+<canvas id="myCanvas3" width="410" height="650" style="border:2px dotted #808808;">
+	CHRISTMAS TREE
+</canvas>
+
+<script> 
+	var c = document.getElementById("myCanvas3");
+	var ctx = c.getContext("2d");
+  	
+  	ctx.font = "20px Arial";
+	ctx.fillText("CHRISTMAS TREE",110,30);
+    
+  	//Christmas Tree
+	
+	ctx.beginPath();
+    //ctx.fillStyle = "#FFFFFF";
+	ctx.arc(205,60,10,0,2*Math.PI);
+	ctx.fillStyle="#FFFF00";
+	ctx.stroke(); 
+	ctx.closePath();
+	
+	//first traingle
+	ctx.moveTo(205,70);
+   	ctx.lineTo(310,180);
+    ctx.stroke();
+    ctx.moveTo(205,70);
+   	ctx.lineTo(100,180);
+    ctx.stroke();
+    ctx.moveTo(310,180);
+   	ctx.lineTo(215,180);
+    ctx.stroke();
+    ctx.moveTo(195,180);
+   	ctx.lineTo(100,180);
+    ctx.stroke();
+    
+    //second traingle
+    ctx.moveTo(215,180);
+   	ctx.lineTo(310,290);
+    ctx.stroke();
+    ctx.moveTo(195,180);
+   	ctx.lineTo(100,290);
+    ctx.stroke();
+    ctx.moveTo(195,290);
+   	ctx.lineTo(100,290);
+    ctx.stroke();
+    ctx.moveTo(215,290);
+   	ctx.lineTo(310,290);
+    ctx.stroke();
+    
+    //third traingle
+    ctx.moveTo(195,290);
+   	ctx.lineTo(100,400);
+    ctx.stroke();
+    ctx.moveTo(215,290);
+   	ctx.lineTo(310,400);
+    ctx.stroke();
+    ctx.moveTo(215,400);
+   	ctx.lineTo(310,400);
+    ctx.stroke();
+    ctx.moveTo(195,400);
+   	ctx.lineTo(100,400);
+    ctx.stroke();
+    
+    //trunk
+    ctx.moveTo(195,400);
+    ctx.lineTo(195,500);
+    ctx.stroke();
+    ctx.moveTo(215,400);
+    ctx.lineTo(215,500);
+    ctx.stroke();
+    
+    //base stand
+    ctx.moveTo(50,500);
+   	ctx.lineTo(195,500);
+    ctx.stroke();
+    ctx.moveTo(215,500);
+   	ctx.lineTo(360,500);
+    ctx.stroke();
+  	ctx.moveTo(50,535);
+   	ctx.lineTo(360,535);
+    ctx.stroke();
+    ctx.moveTo(50,500);
+   	ctx.lineTo(50,535);
+    ctx.stroke();
+    ctx.moveTo(360,500);
+   	ctx.lineTo(360,535);
+    ctx.stroke();
+    
+    var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+	grd.addColorStop(0,"green");
+	grd.addColorStop(1,"white");
+
+	// Fill with gradient
+	ctx.fillStyle = grd;
+	ctx.fillRect(10,10,150,80);
+    
+    
+</script>
+
+</body>
+</html>
+

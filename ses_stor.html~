@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Session</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+if(sessionStorage.hits){
+	sessionStorage.hits=Number(sessionStorage.hits)+1;
+}
+
+else{
+	sessionStorage.hits=1;
+}
+
+document.write("Total hits of the page :"+sessionStorage.hits);
+</script>
+
+</body>
+
+</html>
+

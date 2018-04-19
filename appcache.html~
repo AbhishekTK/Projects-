@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html manifset="demo.appcache">
+<head>
+<title>AppCache</title>
+</head>
+<body>
+<div>
+<img src="file:///home/lab1006/Desktop/flower/API/r.jpg" alt="FLOWERS"/>
+</div>
+</body>
+</html>

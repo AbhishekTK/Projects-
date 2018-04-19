@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flower Form</title>
+<style>
+
+form{
+background-color:grey;
+}
+
+
+</style>
+</head>
+<body>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" >
+    <img src="logo.png" width="450px" height="100px"></img> 
+	<fieldset>
+	<legend>Personal Information:</legend>	
+	<br>
+	Security:
+  	<keygen name="security">
+  	<br><br>
+  	Name:
+  	<input name="firstname" type="text" placeholder="Name">
+  	<br><br>
+  	
+  	Email Id:
+  	<input id="t2" name="email" type="text" placeholder="Email ">
+    <br><br>
+    Mobile No:
+    <input id="t3" name="mobile" type="tel" placeholder="Mobile No.">
+    <br><br>
+
+    
+  	Gender:
+  	<input type="radio" name="gender" value="male" checked> Male<br></pre>		</pre>
+  	<input type="radio" name="gender" value="female"> Female<br></pre>		</pre>
+  	<input type="radio" name="gender" value="other"> Other<br><br>
+  	</fieldset>
+  	
+  	  	<fieldset>
+  	<legend>Buying Procedure!</legend>
+  	<br>
+ 	
+	<label>Select the flower you want to buy:</label>
+	<select name="Flowers" size="1">
+    	<option value="Rose">Rose</option>
+    	<option value="Lily">Lily</option>
+    	<option value="Jasmine">Jasmine</option>
+    	<option value="Dahlia">Dahlia</option>
+    	<option value="Daisy">Daisy</option>
+    	<option value="Orchid">Orchid</option>
+    	<option value="Mixed">Mixed</option>
+    </select>
+  	<br><br>
+  	<label> Color of the flower : </label>
+  	<input type="color" pattern="#[a-f 0-9]" {6} title="hexadecimal color" placeholder="#CC5555">
+ 	<br><br>
+ 	<label>Enter your budget : </label>
+   	<input type="number" value="1000">
+   	<br><br>
+  	
+  	<label> Select your location: </label>
+   	<input list="place">
+ 	<datalist id="place">
+      	<option value ="Mumbai">
+       	<option value ="Shimla">
+        <option value ="Chandigarh">
+        <option value ="Delhi">
+		<option value ="Raipur">
+		<option value ="Lucknow">
+        <option value ="Chennai">
+        <option value ="Madras">
+        <option value ="Pune">
+        <option value ="Kolkata">
+        <option value ="Bhopal">
+        <option value ="Trivandanam">
+        <option value ="Jammu">
+        <option value ="Panaji">
+        <option value ="Earth">
+        <option value ="Ahemdabad">
+        <option value ="Dehradun">
+        <option value ="Port Blair">           
+    </datalist>
+  		<br><br>
+  		
+  		<label>Select Country: </label>
+  		<select>
+  		<optgroup label="Asian">
+   		<option value="India">India</option>
+    	<option value="China">China</option>
+    	<option value="Pakistan">Pakistan</option>
+    	<option value="Bhutan">Bhutan</option>
+ 		</optgroup>
+  		<optgroup label="European">
+   		<option value="France">France</option>
+    	<option value="Austria">Austria</option>
+    	<option value="Germany">Germany</option>
+ 		 </optgroup>
+  		<select>
+  <br><br>
+  		
+  		Date of delivery :
+  		<input type="date" name="deldate">
+  		<br>
+  		
+  		</fieldset>
+		
+		<fieldset>
+		<legend> Feedback!</legend>
+		<br>
+		Review Us!
+		<br>
+		<textarea name="message" rows="10" cols="60">Write to us about how good our services were.</textarea>
+	  	<br><br>
+	  	
+  		
+		
+		<b>Overall rating:</b><br>
+		Ease of navigation: 
+		0 <input type="range" id="a" value="50"> 100
+		+ Information provided:  <input type="number" id="b" value="50">
+	  	=<output name="x" for="a b"></output>
+
+		<br><br>
+		<label>Customer Ratings : </label><meter value="4" min="0" max="5"></meter>
+		<br>
+		<br>
+		<label>Website progress : </label><progress value="8" min="0" max="10"></progress><br>
+		<br>
+		</fieldset>
+		<br>
+	<input type="reset" value="Reset">
+	<input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Worker</title>
+<script type="text/javascript">
+if(window.Worker){
+var Worker=new Worker("worker.js");
+Worker.onmessage= function(event){
+document.getElementById("result").innerHTML= event.data;
+};
+}
+else{
+alert("NOT SUPPORTED");
+}
+</script>
+</head>
+<body>
+<div id="result"></div>
+</body>
+</html>
